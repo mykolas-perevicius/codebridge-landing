@@ -38,19 +38,9 @@
   --color-accent: var(--secondary-color);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #1a1a1a;
-    --foreground: #e0e0e0;
-    --soft-gray: #242424;
-    --text-primary: #e0e0e0;
-    --text-secondary: #b0b0b0;
-    --border-color: #404040;
-  }
-}
-
+/* Force light mode for landing page - B2B sites work best with consistent light theme */
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background: #ffffff;
+  color: #1a1a1a;
   font-family: var(--font-sans);
 }
