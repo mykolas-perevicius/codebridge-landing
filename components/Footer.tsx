@@ -81,8 +81,8 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="https://mykolas-perevicius.github.io/Education_Playground/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-sky-blue transition-colors">
-                  Sample Materials
+                <a href="/Education_Playground/README.html" className="text-gray-400 hover:text-sky-blue transition-colors">
+                  Coding Playground
                 </a>
               </li>
             </ul>
@@ -93,7 +93,7 @@ export default function Footer() {
             <h4 className="text-lg font-semibold mb-4">For Students</h4>
             <ul className="space-y-2">
               <li>
-                <a href="https://mykolas-perevicius.github.io/Education_Playground/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-sky-blue transition-colors">
+                <a href="/Education_Playground/README.html" className="text-gray-400 hover:text-sky-blue transition-colors">
                   Start Learning
                 </a>
               </li>

@@ -128,12 +128,10 @@ export default function Courses() {
             All courses include interactive labs, real-world projects, and portfolio-building assignments
           </p>
           <a
-            href="https://mykolas-perevicius.github.io/Education_Playground/"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/Education_Playground/README.html"
             className="inline-block px-8 py-3 bg-white border-2 border-navy text-navy font-semibold rounded-lg hover:bg-navy hover:text-white transition-all duration-300 shadow-md hover:shadow-lg"
           >
-            Explore Full Course Catalog
+            Enter Coding Playground →
           </a>
         </div>
       </div>

@@ -157,17 +157,17 @@ export const VARIANT_CONFIGS: Record<string, VariantConfig> = {
   // CTA text variants
   cta_text_book_call: {
     primary: 'Book an Information Call',
-    secondary: 'View Course Catalog',
+    secondary: 'Enter Coding Playground',
     nav: 'Book a Call',
   },
   cta_text_schedule_demo: {
     primary: 'Schedule a Demo',
-    secondary: 'View Course Catalog',
+    secondary: 'Enter Coding Playground',
     nav: 'Schedule Demo',
   },
   cta_text_get_started: {
     primary: 'Get Started Today',
-    secondary: 'View Course Catalog',
+    secondary: 'Enter Coding Playground',
     nav: 'Get Started',
   },
 

@@ -91,9 +91,7 @@ export default function Hero() {
 
             {/* Secondary CTA */}
             <a
-              href="https://mykolas-perevicius.github.io/Education_Playground/"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/Education_Playground/README.html"
               onClick={handleSecondaryCTA}
               className="px-8 py-4 bg-transparent border-2 border-white text-white text-lg font-semibold rounded-lg hover:bg-white hover:text-navy transition-all duration-300 hover:shadow-lg w-full sm:w-auto"
             >
