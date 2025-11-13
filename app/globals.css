@@ -2,11 +2,22 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #0D1B2A;
-  /* CodeBridge Color Palette */
+  --foreground: #1a1a1a;
+
+  /* Unified Color Palette (matches Coding Playground) */
+  --primary-color: #4CAF50;
+  --primary-hover: #45a049;
+  --primary-light: #e8f5e9;
+
+  --secondary-color: #667eea;
+  --secondary-dark: #764ba2;
+
   --navy: #0D1B2A;
-  --sky-blue: #3A86FF;
+  --text-primary: #1a1a1a;
+  --text-secondary: #666666;
+
   --soft-gray: #F3F4F6;
+  --border-color: #e0e0e0;
   --white: #FFFFFF;
 }
 
@@ -14,25 +25,32 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-navy: var(--navy);
-  --color-sky-blue: var(--sky-blue);
+  --color-primary: var(--primary-color);
+  --color-primary-hover: var(--primary-hover);
+  --color-secondary: var(--secondary-color);
+  --color-secondary-dark: var(--secondary-dark);
   --color-soft-gray: var(--soft-gray);
+  --color-white: var(--white);
   --font-sans: var(--font-inter);
 
-  /* Custom color palette */
-  --color-primary: var(--sky-blue);
-  --color-primary-dark: #2563eb;
-  --color-secondary: var(--navy);
-  --color-accent: var(--sky-blue);
+  /* Tailwind overrides */
+  --color-sky-blue: var(--primary-color);
+  --color-accent: var(--secondary-color);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0D1B2A;
-    --foreground: #F3F4F6;
+    --background: #1a1a1a;
+    --foreground: #e0e0e0;
+    --soft-gray: #242424;
+    --text-primary: #e0e0e0;
+    --text-secondary: #b0b0b0;
+    --border-color: #404040;
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
+  font-family: var(--font-sans);
 }
