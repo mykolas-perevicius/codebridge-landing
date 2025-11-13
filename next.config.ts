@@ -4,8 +4,9 @@ const nextConfig: NextConfig = {
   // Static export for GitHub Pages
   output: 'export',
 
-  // No basePath needed - landing page will be at repo root
-  // which is already served at /Education_Playground/ by GitHub Pages
+  // Base path for GitHub Pages subdirectory
+  // Site is served at: https://mykolas-perevicius.github.io/Education_Playground/
+  basePath: '/Education_Playground',
 
   // Disable image optimization for static export
   images: {
