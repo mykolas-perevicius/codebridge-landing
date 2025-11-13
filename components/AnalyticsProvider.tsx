@@ -6,13 +6,13 @@
  * Initializes analytics, A/B testing, and tracks user journey
  */
 
-import { useEffect } from 'react';
+import { useEffect, Suspense } from 'react';
 import { usePathname, useSearchParams } from 'next/navigation';
 import { Analytics as VercelAnalytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/react';
 import { analytics, FunnelStage, trackPageView, trackFunnel } from '@/lib/analytics';
 
-export default function AnalyticsProvider({ children }: { children: React.ReactNode }) {
+function AnalyticsContent({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
   const searchParams = useSearchParams();
 
@@ -62,6 +62,15 @@ export default function AnalyticsProvider({ children }: { children: React.ReactN
       <VercelAnalytics />
       <SpeedInsights />
     </>
+  );
+}
+
+// Wrapper component with Suspense for static export compatibility
+export default function AnalyticsProvider({ children }: { children: React.ReactNode }) {
+  return (
+    <Suspense fallback={<>{children}</>}>
+      <AnalyticsContent>{children}</AnalyticsContent>
+    </Suspense>
   );
 }
 

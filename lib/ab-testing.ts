@@ -9,8 +9,8 @@ import { analytics, trackVariant } from './analytics';
 
 export interface Experiment {
   name: string;
-  variants: string[];
-  weights?: number[]; // Optional weights for each variant (must sum to 1)
+  variants: readonly string[];
+  weights?: readonly number[]; // Optional weights for each variant (must sum to 1)
 }
 
 export interface VariantConfig {
