@@ -53,7 +53,7 @@ export default function HowItWorks() {
         </div>
 
         {/* Steps Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {steps.map((step, index) => (
             <div key={index} className="relative">
               {/* Connector Line (desktop only) */}
@@ -62,7 +62,7 @@ export default function HowItWorks() {
               )}
 
               {/* Step Card */}
-              <div className="relative bg-soft-gray rounded-2xl p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border-2 border-transparent hover:border-sky-blue">
+              <div className="relative bg-soft-gray rounded-2xl p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border-2 border-transparent hover:border-sky-blue flex flex-col h-full">
                 {/* Step Number Badge */}
                 <div className="absolute -top-6 -left-6 w-16 h-16 bg-sky-blue text-white rounded-full flex items-center justify-center font-bold text-2xl shadow-lg">
                   {step.number}

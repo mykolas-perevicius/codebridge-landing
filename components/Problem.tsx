@@ -54,7 +54,7 @@ export default function Problem() {
           {problems.map((problem, index) => (
             <div
               key={index}
-              className="bg-white rounded-xl p-8 shadow-md hover:shadow-xl transition-shadow duration-300 border border-gray-100"
+              className="bg-white rounded-xl p-8 shadow-md hover:shadow-xl transition-shadow duration-300 border border-gray-100 flex flex-col h-full"
             >
               {/* Icon */}
               <div className="text-sky-blue mb-6">

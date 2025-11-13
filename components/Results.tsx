@@ -94,7 +94,7 @@ export default function Results() {
             {testimonials.map((testimonial, index) => (
               <div
                 key={index}
-                className="bg-soft-gray rounded-xl p-8 shadow-md hover:shadow-xl transition-all duration-300 relative"
+                className="bg-soft-gray rounded-xl p-8 shadow-md hover:shadow-xl transition-all duration-300 relative flex flex-col h-full"
               >
                 {/* Quote Icon */}
                 <div className="absolute -top-4 -left-4 w-12 h-12 bg-sky-blue rounded-full flex items-center justify-center text-white text-3xl font-serif">
@@ -102,12 +102,12 @@ export default function Results() {
                 </div>
 
                 {/* Quote */}
-                <p className="text-gray-700 italic mb-6 leading-relaxed pt-4">
+                <p className="text-gray-700 italic mb-6 leading-relaxed pt-4 flex-1">
                   {testimonial.quote}
                 </p>
 
                 {/* Author Info */}
-                <div className="border-t border-gray-300 pt-4">
+                <div className="border-t border-gray-300 pt-4 mt-auto">
                   <p className="font-bold text-navy">{testimonial.author}</p>
                   <p className="text-sm text-gray-600">{testimonial.role}</p>
                   <p className="text-sm text-gray-500">{testimonial.location}</p>
